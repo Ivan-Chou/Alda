@@ -1,0 +1,29 @@
+(tempo! 130)
+
+
+sete_1 = [ o5 c+4 < b-4 g+8 b-8 d+8 b-8 | g+8 b-8 g+8 b-8 g+4 b-8 > c+8 ]
+
+sete_2_1 = [ o4 r8 b-8 b-8 b-8 g+8 b-8 d+8 b-8 | g+8 b-8 g+8 b-8 g+4 b-8 d+8 ]
+
+sete_3 = [ o3 b-4 > c+4 d+8 c+8 d+8 c+8 | d+8 c+8 d+8 c+8 d+4 f8 f+8]
+
+sete_4 = [ o4 r8 g+8 g+8 g+8 g+8 f+8 g+8 f+8 g+8 | > c+4 < g+8 b8 b-8 b-8 b-8]
+
+sete_2_2 = [ o4 r8 b-8 b-8 b-8 g+8 b-8 d+8 b-8 | g+8 > c+8 c+8 < b-8 > d+4 c+8 < {b- d+}8 ]
+
+sete_last = [
+	o3 b-4 > c+4 d+8 c+8 d+8 c+8 d+8 b-8 | 
+	r8 c+8 d+8 c+8 d+8 b-8 
+	r8 c+8 | d+8 c+8 c+8 b-8 
+	r8 d+8 d+8 c+8 c+8 d+8
+]
+
+flute:
+	sete_1
+	sete_2_1
+	sete_3
+	sete_4
+	
+	sete_1
+	sete_2_2
+	sete_last

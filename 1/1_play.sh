@@ -1,0 +1,1 @@
+alda play --file 1.alda

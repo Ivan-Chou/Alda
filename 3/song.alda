@@ -1,0 +1,49 @@
+(tempo! 130)
+
+# violin
+part_violin = [
+	o4 f+8 g8 o5 d8 o4 f+8 r8 g8 r8 d8 
+	o4 f+8 g8 o5 d8 o4 f+8 r8 a8 r8 b8
+	o4 f+8 g8 o5 d8 o4 f+8 r8 g8 r8 d8
+	o4 f+8 g8 o5 d8 o4 f+8 r8 o5 f+8 r8 d8
+] # 8
+
+# cello
+part_cello = [
+	o3 e8 e8 r8 e8 r8 e8 r8 < g8
+	o3 e8 e8 r8 e8 r8 e8 r8 < g8
+	o3 c8 c8 r8 c8 r8 c8 r8 c8
+	o3 d8 d8 r8 d8 r8 d8 r8 d8
+]
+
+# soundtrack
+part_st = [
+	o3 e1 
+	o3 e1
+	o3 c1
+	o3 d1 #2 f+2
+]
+
+# drum
+part_rest = [ r1 * 4 ]
+part_drum = [
+	o3 f+2 r8 f+8 f+8 f+8
+	o3 f+2 f+8 o2 f+8 f+8 o3 f+8
+	o3 f+2 r8 f+8 f+8 f+8
+	o3 f+2 o3 f+8 o2 f+16 o3 f+16 o2 f+8 f+8
+]
+
+violin:
+	part_violin * 4
+
+midi-cello:
+	part_cello * 4
+	
+midi-fx-soundtrack:
+	(p)
+	part_st * 4
+	
+
+midi-percussion: # finding better drum
+	part_rest * 2
+	part_drum * 2

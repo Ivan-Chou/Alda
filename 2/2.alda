@@ -1,0 +1,34 @@
+(tempo! 130)
+
+head1=[o4 r4 d8 r4 d]# 3.5 
+body1=[o3 g8 g g+ b- o4 c d d+ f g |]# 4.5
+head2=[o4 r4 d+8 r4 d+]# 3.5
+body2=[o3 b-8 o4 b- g g f f d+ d+ d |]# 4.5
+
+alto-saxophone:
+	(p)
+	head1 body1 
+	head2 body2
+
+midi-electric-grand-piano:
+	(p)
+	head1 body1 
+	head2 body2
+
+marimba:
+	(f)
+	r4*3 r8 body1 
+	r4*3 r8 body2
+
+midi-woodblock:
+	(p)
+	[r8 head1]*4
+
+midi-synth-drum:
+	(p)
+	[r4 d r8 d4 r8]*4
+
+beat=[o2 c4 o5 c8 o2 c8*2 o5 c4 r8]
+midi-percussion:
+	(p)
+	beat*4
